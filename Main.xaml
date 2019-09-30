@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>826,961</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>814,903</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -65,13 +65,13 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID3}" sap2010:Annotation.AnnotationText="-- ReFrameWork - Robotic Enterprise Framework --&#xA;-- MEDIAMARKT &amp; MICROSPOT PRICE COMPARISON --&#xA;- Search for iPhones on Mediamarkt&#xA;- Save to Excel file with Name, Price and Date&#xA;- For each product, search for the price on Microspot, save the price to Excel file&#xA;- Send the results to Thuan Nguyen - Sword&#xA;- Close all the opened applications" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="806,861" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID3}" sap2010:Annotation.AnnotationText="-- ReFrameWork - Robotic Enterprise Framework --&#xA;-- MEDIAMARKT &amp; MICROSPOT PRICE COMPARISON --&#xA;&gt; Search for products (configured in Data\Config.xlsx file) on Mediamarkt&#xA;&gt; Save to Excel file with Name, Price and Date&#xA;&gt; For each product, search for the price on Microspot, save the price to the same Excel file&#xA;&gt; Send the results to email receiver (configured in Data\Config.xlsx file)&#xA;&gt; Close all the opened applications" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="794,803" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">60,12.5</av:Point>
-        <x:Double x:Key="StateContainerWidth">772</x:Double>
-        <x:Double x:Key="StateContainerHeight">708</x:Double>
+        <x:Double x:Key="StateContainerWidth">760</x:Double>
+        <x:Double x:Key="StateContainerHeight">650</x:Double>
         <av:PointCollection x:Key="ConnectorLocation">120,50 273,50</av:PointCollection>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
@@ -188,7 +188,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="A transaction either succeeds or fails with a Business Rule Exception or a System Error. For System Error, it can be retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="484,984" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="A transaction either succeeds or fails with a Business Rule Exception or a System Error. For System Error, it can be retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="231,142" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
                 <TryCatch DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="438,528" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
@@ -315,7 +315,7 @@
                 <Transition DisplayName="Error" sap:VirtualizedContainerService.HintSize="429.6,509.6" sap2010:WorkflowViewState.IdRef="Transition_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">354.3,522 354.3,534.4 557,534.4 557,54.4 527,54.4</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">354.3,522 354.3,613 700,613 700,54.4 527,54.4</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">23</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">40</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -591,7 +591,7 @@
                 <Transition DisplayName="Rule Exception" sap:VirtualizedContainerService.HintSize="429.6,509.6" sap2010:WorkflowViewState.IdRef="Transition_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">412.05,522 412.05,540.6 555.5,540.6 555.5,210.6 525.5,210.6</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">412.05,522 412.05,581.04 653,581.04 653,210.6 525.5,210.6</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">43</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">20</x:Int32>
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
